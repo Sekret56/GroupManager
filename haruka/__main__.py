@@ -154,7 +154,7 @@ def send_start(bot, update):
     text = PM_START
 
     keyboard = [[InlineKeyboardButton(text="🇮🇳 Language", callback_data="set_lang_")]]
-    keyboard += [[InlineKeyboardButton(text="🛠 Reporting", callback_data="@NobaleSupportGroup")
+    keyboard += [[InlineKeyboardButton(text="🛠 Reporting", callback_data="t.me/NobaleSupportGroup")
         
     update.effective_message.reply_text(PM_START.format(escape_markdown(first_name), bot.first_name), reply_markup=InlineKeyboardMarkup(keyboard), disable_web_page_preview=True, parse_mode=ParseMode.MARKDOWN)
 
@@ -193,7 +193,7 @@ def control_panel(bot, update):
         keyboard = [[InlineKeyboardButton(text="👤 My settings", callback_data="cntrl_panel_U(1)")]]
 
         #Show connected chat and add chat settings button
-        conn = connected(bot, update, chat, user.id, need_admin=False)
+        conn = connected(bot, update, chat, user.id, need_admin=True)
 
         if conn:
             chatG = bot.getChat(conn)
