@@ -1,35 +1,4 @@
-#    Haruka Aya (A telegram bot project)
-#    Copyright (C) 2017-2019 Paul Larsen
-#    Copyright (C) 2019-2020 Akito Mizukito (Haruka Network Development)
 
-#    This program is free software: you can redistribute it and/or modify
-#    it under the terms of the GNU Affero General Public License as published by
-#    the Free Software Foundation, either version 3 of the License, or
-#    (at your option) any later version.
-
-#    This program is distributed in the hope that it will be useful,
-#    but WITHOUT ANY WARRANTY; without even the implied warranty of
-#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#    GNU Affero General Public License for more details.
-
-#    You should have received a copy of the GNU Affero General Public License
-#    along with this program.  If not, see <https://www.gnu.org/licenses/>.
-
-import datetime
-from sys import argv
-import importlib
-import re
-from typing import List
-
-from telegram import Update, Bot
-from telegram import ParseMode, InlineKeyboardMarkup, InlineKeyboardButton
-from telegram.error import (Unauthorized, BadRequest, TimedOut, NetworkError,
-                            ChatMigrated, TelegramError)
-from telegram.ext import CommandHandler, Filters, MessageHandler, CallbackQueryHandler
-from telegram.ext.dispatcher import run_async, DispatcherHandlerStop, Dispatcher
-
-# Needed to dynamically load modules
-# NOTE: Module order is not guaranteed, specify that in the config file!
 from haruka.modules import ALL_MODULES
 from haruka import dispatcher, updater, LOGGER, TOKEN, tbot
 from haruka.modules.helper_funcs.misc import paginate_modules
