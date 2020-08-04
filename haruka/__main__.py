@@ -29,13 +29,9 @@ I'm group manager bot and Anti-spam for RR Players🃏
 Activate Anti-spam protection in your BM by this command : 
 /antispam on 
 
-My owner is [Dayam Zaidi ](t.me/mrdayamzaidi)
+My owner is [Dayam Zaidi](t.me/mrdayamzaidi)
 
 Special thanks to [Jayesh Patil](t.me/Jayesh_Patil) for helping me.
-
-Deploy a bot like me [now](www.github.com/xditya/GroupManager)
-
-Watch [video tutorial](https://www.youtube.com/watch?v=gXXFpTAk6Vo&feature=youtu.be) on deploying me.
 
 Click /help or Help button below to find out more about how to use me to my full potential.
 
