@@ -248,7 +248,7 @@ def control_panel(bot, update):
         back_match = re.match(r"cntrl_panel_G_back", query.data)
 
         chatP = chat
-        conn = connected(bot, update, chat, user.id)
+        conn = connected(bot, update, chat, user.-1001438550369)
 
         if not conn == False:
             chat = bot.getChat(conn)
