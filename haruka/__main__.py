@@ -24,14 +24,13 @@ PM_START = """Hello {}, my name is {}!
 
 You know how hard it is sometimes to manage group so here is the solution for you
 
-I'm group manager bot and Anti-spam for RR Players🃏
+I'm group manager bot i can manage your big groups very easily.
 
-Activate Anti-spam protection in your BM by this command : 
-/antispam on 
+My Special feature is I can handle unlimited filters.
 
 My owner is [Dayam Zaidi](t.me/mrdayamzaidi)
 
-Special thanks to [Jayesh Patil](t.me/Jayesh_Patil) for helping me.
+Special thanks to [Jayesh Patil](t.me/Jayesh_Patil).
 
 Click /help or Help button below to find out more about how to use me to my full potential.
 
@@ -154,7 +153,7 @@ def send_start(bot, update):
     text = PM_START
 
     keyboard = [[InlineKeyboardButton(text="🇮🇳 Language", callback_data="set_lang_")]]
-    keyboard += [[InlineKeyboardButton(text="🛠 Reporting", callback_data="t.me/NobaleSupportGroup"), 
+    keyboard += [[InlineKeyboardButton(text="🛠 Support", callback_data="t.me/NobaleSupportGroup"), 
         InlineKeyboardButton(text="❔ Help", callback_data="help_back")]]
 
     update.effective_message.reply_text(PM_START.format(escape_markdown(first_name), bot.first_name), reply_markup=InlineKeyboardMarkup(keyboard), disable_web_page_preview=True, parse_mode=ParseMode.MARKDOWN)
