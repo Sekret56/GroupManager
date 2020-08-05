@@ -32,7 +32,7 @@ Special thanks to [Jayesh Patil](t.me/Jayesh_Patil).
 
 Click /help or Help button below to find out more about how to use me to my full potential.
 
- Add me to a group by clicking [here](http://t.me/tg_GroupManagerBot?startgroup=true).
+ Add me to a group by clicking [here](http://t.me/NobaleBot?startgroup=true).
 """
 
 
