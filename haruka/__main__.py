@@ -24,9 +24,10 @@ PM_START = """Hello {}, my name is {}!
 
 You know how hard it is sometimes to manage group so here is the solution for you
 
-I'm group manager bot i can manage your big groups very easily.
+I'm group manager bot and Anti-spam for RR Players🃏
 
-My Special feature is I can handle unlimited filters.
+Activate Anti-spam protection in your BM by this command : 
+/antispam on 
 
 My owner is [Dayam Zaidi](t.me/mrdayamzaidi)
 
@@ -153,7 +154,7 @@ def send_start(bot, update):
     text = PM_START
 
     keyboard = [[InlineKeyboardButton(text="🇮🇳 Language", callback_data="set_lang_")]]
-    keyboard += [[InlineKeyboardButton(text="🛠 Support", callback_data="cntrl_panel_M"), 
+    keyboard += [[InlineKeyboardButton(text="🛠 Reporting", callback_data="cntrl_panel_M"), 
         InlineKeyboardButton(text="❔ Help", callback_data="help_back")]]
 
     update.effective_message.reply_text(PM_START.format(escape_markdown(first_name), bot.first_name), reply_markup=InlineKeyboardMarkup(keyboard), disable_web_page_preview=True, parse_mode=ParseMode.MARKDOWN)
@@ -193,7 +194,7 @@ def control_panel(bot, update):
         keyboard = [[InlineKeyboardButton(text="👤 My settings", callback_data="cntrl_panel_U(1)")]]
 
         #Show connected chat and add chat settings button
-        conn = connected(bot, update, -1001438550369, user.id, need_admin=True)
+        conn = connected(bot, update, chat, user.id, need_admin=False)
 
         if conn:
             chatG = bot.getChat(conn)
